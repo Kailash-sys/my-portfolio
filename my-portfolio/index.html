@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">MyPortfolio</div>
+
+      <nav class="nav" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div>
+        <p class="hero-tagline">Hello, I'm</p>
+        <h1 class="hero-title">Your Name</h1>
+        <p class="hero-subtitle">Frontend Developer | C Programmer | Student</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-text">
+        I am a passionate developer currently learning web development, C programming,
+        and problem solving. I enjoy building simple, clean projects and improving my skills
+        step by step.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML &amp; CSS</div>
+        <div class="skill-card">JavaScript (Basics)</div>
+        <div class="skill-card">C Programming</div>
+        <div class="skill-card">Git &amp; GitHub</div>
+        <div class="skill-card">Problem Solving</div>
+        <div class="skill-card">Python (Basics)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            A simple responsive portfolio website created using HTML, CSS, and JavaScript.
+          </p>
+          <a href="#" class="project-link">View Code</a>
+        </article>
+
+        <article class="project-card">
+          <h3>To-Do List App</h3>
+          <p>
+            A basic to-do list using JavaScript DOM manipulation to add and remove tasks.
+          </p>
+          <a href="#" class="project-link">View Code</a>
+        </article>
+
+        <article class="project-card">
+          <h3>C Programs Collection</h3>
+          <p>
+            A collection of C programs for practice: factorial, Fibonacci, calculator, and more.
+          </p>
+          <a href="#" class="project-link">View Code</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-text">
+        Have a question or want to work together? Send me a message.
+      </p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="your@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
